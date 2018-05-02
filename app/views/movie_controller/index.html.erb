@@ -1,0 +1,4 @@
+<h1>My movies : </h1>
+<% @movies.each do |movie| %>
+<p> Le film <%= movie.title %>, réalisé par <%= movie.director.first_name %> <%= movie.director.last_name %> est sorti en <%= movie.release_year %></p>
+<% end %>
